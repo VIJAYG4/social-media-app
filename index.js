@@ -10,7 +10,8 @@ const { MONGODB } = require('./config');
 //create server instance
 const server = new ApolloServer({
     typeDefs,
-    resolvers
+    resolvers,
+    context: ({ req }) => ({ req })
 });
 
 //connect to MONGODB and start the server - uses express server behind the scenes

@@ -16,7 +16,7 @@ function generateToken(user){
             email: user.email,
             username: user.username
         },
-        SECRET_KEY,
+        "put in your secret key",
         {expiresIn: '1h'}
     );
 }
@@ -61,6 +61,7 @@ module.exports = {
             }, //curly brace for destructuring or accessing each arg separately
             ){
             //TODO: validate user data
+            
             //TODO: ensure user name doens't already exist
             const user = await User.findOne({ username });
             if(user){                                // user null if username doesn't exist otherwise true 
