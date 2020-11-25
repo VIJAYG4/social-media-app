@@ -1,8 +1,9 @@
 # learning MERNG stack by building social-media-app
 
-## What I learnt so far:
+## Tasks completed:
 - setup Graphql to query the posts
 - setup mongodb atlas database, store posts, and retrieve it using graphql
+- added register and login functionality with user input validation 
 
-## Next step:
-- add register and login funcitonality for the app
+## TODO:
+- Authentication middleware & create & delete posts
