@@ -1,0 +1,18 @@
+Common graphql errors:
+1) Throws a weird incomprehendible error inside node modules.
+error: "cannot return null for non-nullable object" 
+Solution:
+Mostly some files are not saved in vscode. Save all the files 
+separately in vscode where you made changes. 
+
+2)SECRET_KEY should have value. 
+Sometimes SECRET_KEY value will not work properly. don't hardcode
+any value for it as it will create user login errors 
+(invalid/expired token) 
+Solution:
+don't hardcode any values for SECRET_KEY. if you do, you have to 
+register and login a new user. the old user would have used 
+the old SECRET_KEY value and will not accept the login.
+
+3) cannot read property "find" of undefined in graphql:
+solution: forgot to add "await" keyword for the operation. ex: await Post.find()
