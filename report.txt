@@ -16,3 +16,11 @@ the old SECRET_KEY value and will not accept the login.
 
 3) cannot read property "find" of undefined in graphql:
 solution: forgot to add "await" keyword for the operation. ex: await Post.find()
+---------------------------------------------------------------------------------------------
+Common commands:
+
+Start the server:
+npm run serve (will not restart the server when we make changes)
+
+Start the client:
+npm start
