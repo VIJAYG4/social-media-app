@@ -16,7 +16,22 @@ the old SECRET_KEY value and will not accept the login.
 
 3) cannot read property "find" of undefined in graphql:
 solution: forgot to add "await" keyword for the operation. ex: await Post.find()
+
+4) cannot fetch data in the frontend. data returned is null. code is correct. 
+
+5) ternary operator syntax error: 
+loading ? () : ()
+each () should have a wrapper. ex: <div></div> or <component></component>
+{} means JSX experession. ex: looping through array is {posts.map((post) => <div key={post.id}>post</div>)}
 ---------------------------------------------------------------------------------------------
+client-side summary:
+1. install all the required packages like apollo-client, react-router-hook, semantic-ui-react, semantic-ui-css etc. from inside the client folder.
+2. create ApolloProvider(one-time config) and wrap the App around it.
+3. Create components(Home, Login, register pages) and hook it with react-router 
+4. using semantic-ui menu bar display the navigation buttons at the top. 
+
+
+
 Common commands:
 
 Start the server:
