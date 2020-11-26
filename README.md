@@ -6,8 +6,10 @@
 - added register and login functionality with user input validation 
 - Authentication middleware & create & delete posts
 - create and delete comments, like/unlike posts, subscription for new post
-- finished the server-side setup(graphql) 
+- finished the server-side APIs(graphql) 
 - client-side(reactjs): semantic-ui and routes 
+- display posts
 
 ## TODO:
--display posts
+- login and register pages
+- authentication context
